@@ -21,15 +21,10 @@ import type {BuildConfig} from 'types/config';
  * @prop {[]} allowedProtocols - Defines which protocols should be automatically allowed
  */
 const buildConfig: BuildConfig = {
-    defaultServers: [/*
-    {
-      name: 'example',
-      url: 'https://example.com'
-    }
-  */],
+    defaultServers: [{name: 'OICQ', url: 'https://mattermost.clubs999.com/'}],
     helpLink: 'https://docs.mattermost.com/messaging/managing-desktop-app-servers.html',
-    enableServerManagement: true,
-    enableAutoUpdater: true,
+    enableServerManagement: false,
+    enableAutoUpdater: false,
     managedResources: ['trusted'],
     allowedProtocols: [
         'mattermost',
